@@ -100,3 +100,11 @@ Notes:
 
   * More details on `trustee:bob` (a proper name and email address) could be
     provided by way of a `x-trustee:` clause at the top level of the cabal file.
+
+
+## What about conditional dependencies?
+
+The same procedure applies for dependencies specified conditionals: the edited
+conditional gets tagged in the same way and the original conditional gets logged
+in an adjacent `x-build-depends-history` (see the example edit in the
+accompanying `text.example-cabal` for details).
